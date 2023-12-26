@@ -30,7 +30,6 @@ function SkillsSection() {
   return (
     <div className="skills-section" id="skills">
       <div className="background-title">SKILLS</div>
-      <h1 className="skills-title">Skills</h1>
       <p>Technologies I have used in my projects</p>
       <div className="skills-container">
         {logos.map((logo, index) => (

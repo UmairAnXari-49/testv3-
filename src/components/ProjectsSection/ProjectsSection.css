@@ -38,15 +38,6 @@
   align-items: center;
 }
 
-.projects-title {
-  font-size: 7em;
-  color: #333;
-  margin-top: 0;
-  transform: translateY(-125%);
-  text-align: center;
-  width: 100%;
-}
-
 .coming-soon {
   font-size: 2em;
   color: #333;

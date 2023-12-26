@@ -28,15 +28,6 @@
   white-space: nowrap;
 }
 
-.skills-title {
-  margin-top: -17vh;
-  margin-bottom: 10vh;
-  font-size: 7em;
-  color: #333;
-  position: relative;
-  z-index: 1;
-}
-
 .skills-section p {
   font-weight: bold;
   font-size: 1.5em;

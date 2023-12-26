@@ -34,13 +34,6 @@
   margin: auto;
 }
 
-.about-section h1 {
-  font-size: 7em;
-  color: #333;
-  margin-bottom: 0.7em;
-  transform: translateY(-65%);
-}
-
 .about-section p {
   font-size: 1em;
   color: #333;

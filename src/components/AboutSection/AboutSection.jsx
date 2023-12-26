@@ -9,7 +9,6 @@ function AboutSection() {
       <div className="about-container">
         <div className="background-title">ABOUT ME</div>
         <div className="about-content">
-          <h1 className="title-about">About me</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Cras
