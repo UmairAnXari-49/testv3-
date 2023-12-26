@@ -1,0 +1,143 @@
+.about-section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Helvetica", sans-serif;
+  background-color: #ece9e2;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.background-title {
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(2);
+  font-size: 10vw;
+  color: #333;
+  opacity: 0.1;
+  z-index: 0;
+  font-family: "Helvetica", sans-serif;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.about-content {
+  position: relative;
+  max-width: 90%;
+  z-index: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.about-section h1 {
+  font-size: 7em;
+  color: #333;
+  margin-bottom: 0.7em;
+  transform: translateY(-65%);
+}
+
+.about-section p {
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 1.5em;
+  line-height: 1.6;
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.social-button img {
+  width: 40px;
+}
+
+.social-button {
+  margin: 30px;
+}
+
+.social-button {
+  border-radius: 0px;
+  background: #ece9e2;
+  box-shadow: 5px 5px 10px #d9d6d0, -5px -5px 10px #fffcf4;
+  display: inline-block;
+  padding: 10px;
+  margin: 50px;
+  text-decoration: none;
+}
+
+.social-button img {
+  width: 50px;
+  height: auto;
+}
+
+.about-content,
+.about-section h1 {
+  position: relative;
+  z-index: 1;
+}
+.about-section{
+  padding-bottom: 5%;
+}
+
+@media (max-width: 768px) {
+  .background-title {
+    font-size: 15vw;
+    top: 10%;
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+
+  .about-section h1 {
+    font-size: 4em;
+    transform: translateY(-50%);
+  }
+
+  .about-section p {
+    font-size: 0.8em;
+  }
+
+  .about-content {
+    max-width: 100%;
+  }
+
+  .social-button img {
+    width: 40px;
+  }
+
+  .social-button {
+    margin: 30px;
+  }
+
+  .social-button {
+    border-radius: 0px;
+    background: #ece9e2;
+    box-shadow: 5px 5px 10px #d9d6d0, -5px -5px 10px #fffcf4;
+    display: inline-block;
+    padding: 10px;
+    margin: 50px;
+    text-decoration: none;
+  }
+
+  .social-button img {
+    width: 50px;
+    height: auto;
+  }
+
+  .about-content,
+  .about-section h1 {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 576px) {
+  .background-title {
+    transform: translate(-50%, 50%) scale(2) !important;
+    top: 4% !important;
+  }
+  .title-about{
+    font-size: 40px!important;
+  }
+}

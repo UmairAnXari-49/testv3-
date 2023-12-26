@@ -1,0 +1,22 @@
+.footer {
+  background-color: #dfdbd0;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  font-size: 1em;
+  box-shadow: inset 5px 5px 21px #c6c3b9, inset -5px -5px 21px #f8f3e7;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    font-size: 0.9em;
+    padding: 15px;
+  }
+}

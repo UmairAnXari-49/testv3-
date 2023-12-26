@@ -1,0 +1,71 @@
+.projects-section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center content vertically */
+  background-color: #ece9e2;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.background-title {
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(2);
+  font-size: 10vw;
+  color: #333;
+  opacity: 0.1;
+  z-index: 0;
+  font-family: "Helvetica", sans-serif;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.projects-inner-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  z-index: 1;
+  margin-top: 7%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-title {
+  font-size: 7em;
+  color: #333;
+  margin-top: 0;
+  transform: translateY(-125%);
+  text-align: center;
+  width: 100%;
+}
+
+.coming-soon {
+  font-size: 2em;
+  color: #333;
+  margin-top: 5%;
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .coming-soon {
+    font-size: calc(1.5rem + 2vw);
+  }
+  .projects-title,
+  .projects-section p {
+    font-size: calc(2rem + 2vw);
+  }
+}
+
+@media (max-width: 576px) {
+  .projects-title {
+    transform: translateY(-520%);
+  }
+}
