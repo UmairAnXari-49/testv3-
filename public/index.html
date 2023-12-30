@@ -6,14 +6,26 @@
     <title>Tereza Petrovičová</title>
   </head>
   <body>
-
-<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
-  <input type="text" name="name" />
-  <input type="email" name="email" />
-  <textarea name="message"></textarea>
-  <input type="hidden" name="form-name" value="contact" />
-</form>
-    
     <div id="root"></div>
+
+    <script>
+      // Ensure the Netlify form is loaded after React has rendered
+      window.onload = function () {
+        const form = document.forms["contact"];
+        if (form) {
+          form.addEventListener("submit", function (event) {
+            // Prevent the default form submission
+            event.preventDefault();
+
+            // Manually trigger the form submission
+            const submitButton = document.createElement("button");
+            form.appendChild(submitButton);
+            submitButton.click();
+            form.removeChild(submitButton);
+          });
+        }
+      };
+    </script>
+
   </body>
 </html>
