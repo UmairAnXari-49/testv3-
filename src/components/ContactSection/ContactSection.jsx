@@ -5,6 +5,17 @@ import backgroundVideo from "../../assets/backgroundVideo.mp4";
 function ContactSection() {
   const handleSubmit = (e) => {
     e.preventDefault();
+    // Additional logic for handling form submission, if needed
+    // You can also use fetch or axios to send the form data to a server
+    console.log("Form submitted");
+  };
+
+  const handleSendButtonClick = () => {
+    // Programmatically trigger form submission
+    const form = document.forms["contact"];
+    if (form) {
+      form.submit();
+    }
   };
 
   return (
@@ -40,6 +51,15 @@ function ContactSection() {
 
             <button type="submit" className="send-button">
               Send
+            </button>
+
+            {/* Add a button to trigger form submission */}
+            <button
+              type="button"
+              className="send-button"
+              onClick={handleSendButtonClick}
+            >
+              Send Programmatically
             </button>
           </form>
         </div>
