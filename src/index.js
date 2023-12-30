@@ -5,8 +5,13 @@ import App from "./App.js";
 const container = document.getElementById("root");
 const root = createRoot(container);
 
-root.render(
+
+ReactDOM.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <ContactSection />
+  </React.StrictMode>,
+  document.getElementById('root')
 );
+
+
+
