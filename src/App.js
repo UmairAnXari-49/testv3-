@@ -1,4 +1,6 @@
 import React from "react";
+import ReactDOM from 'react-dom';
+
 import Navbar from "./components/Navbar/Navbar.jsx";
 import HeroSection from "./components/HeroSection/HeroSection.jsx";
 import AboutSection from "./components/AboutSection/AboutSection.jsx";
@@ -19,7 +21,18 @@ function App() {
       <ContactSection id="contact" />
       <Footer />
     </div>
+
+ReactDOM.render(
+  <React.StrictMode>
+    <ContactSection />
+  </React.StrictMode>,
+  document.getElementById('root')
+  
   );
-}
+
 
 export default App;
+
+
+
+
