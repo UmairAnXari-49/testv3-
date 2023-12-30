@@ -1,5 +1,5 @@
 import React from "react";
-import { createRoot } from "react-dom/client";
+import ReactDOM from "react-dom";
 import ContactSection from "./components/ContactSection/ContactSection.jsx";
 
 import App from "./App.js";
@@ -7,9 +7,13 @@ import App from "./App.js";
 const container = document.getElementById("root");
 const root = createRoot(container);
 
-root.render(
+const rootElement = document.getElementById("root");
+ReactDOM.render(
   <React.StrictMode>
-    <App />    
-  <ContactSection />
-  </React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  rootElement
 );
+
+
+
