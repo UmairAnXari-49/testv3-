@@ -15,13 +15,23 @@ function ContactSection() {
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Log the form data for demonstration purposes
-    console.log("Form submitted with data:", formData);
+    try {
+      const response = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+      });
 
-    // Additional logic for handling form submission, if needed
-    // You can also use fetch or axios to send the form data to a server
+      if (response.ok) {
+        console.log("Form submitted successfully");
+      } else {
+        console.error("Form submission failed");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
   };
 
   const handleSendButtonClick = () => {
