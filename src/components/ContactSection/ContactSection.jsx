@@ -17,13 +17,10 @@ function ContactSection() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     try {
       const response = await fetch("/", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded",
-        },
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(formData).toString(),
       });
 
@@ -34,6 +31,14 @@ function ContactSection() {
       }
     } catch (error) {
       console.error("Error submitting form:", error);
+    }
+  };
+
+  const handleSendButtonClick = () => {
+    // Programmatically trigger form submission
+    const form = document.forms["contact"];
+    if (form) {
+      form.submit();
     }
   };
 
@@ -95,6 +100,15 @@ function ContactSection() {
 
             <button type="submit" className="send-button">
               Send
+            </button>
+
+            {/* Add a button to trigger form submission */}
+            <button
+              type="button"
+              className="send-button"
+              onClick={handleSendButtonClick}
+            >
+              Send Programmatically
             </button>
           </form>
         </div>
